@@ -27,10 +27,10 @@ The task 1 includes completion of the following instructions
       
    <br>
       <li>Home screen of Ubuntu.</li>
-      <img src="task1 (2).png">
+      <img src="task1 (3).png">
     <br>
-      <li>Open the terminal.</li>
-      <img src="photo3.png"> <br>
+      <li>Write the C program for sum of one to n in newfile and run the code in terminal.</li>
+      <img src= "task1 (4).png" > <br>
       <li>Enter the following instructions shown in image below.Write the c code as shown and save the file.</li>
       <img src="photo4.png"> <br>
       <li>Execute the code.</li>
