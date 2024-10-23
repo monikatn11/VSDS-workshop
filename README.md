@@ -31,18 +31,10 @@ The task 1 includes completion of the following instructions
     <br>
       <li>Write the C program for sum of one to n in newfile and run the code in terminal.</li>
       <img src= "task1 (4).png" > <br>
-      <li>Enter the following instructions shown in image below.Write the c code as shown and save the file.</li>
-      <img src="photo4.png"> <br>
-      <li>Execute the code.</li>
-      <img src="photo5.png"> <br>
-      <li>Verification using calculator.</li>
-      <img src="photo6.png"> <br>
-      <li>Follow the instruction shown in the images below.</li>
-      <img src="photo7.png">
-      <img src="Screenshot from 2024-10-23 11-46-26.png">
-      <img src="Screenshot from 2024-10-23 18-15-50.png"> <br>
-      <li>Output.</li>
-       <img src="photo8.png">
-        <img src="photo10.png">
+      <li>Run command riscv64-unknown-elf-objdump -d sum1ton.o </li>
+      <img src="task1 (5).png"> <br>
+      <li>Search the main.</li>
+       <img src="taskk1.jpeg">
+        <img src="taskk1 (2).jpeg">
 </OL>
 </h4>
