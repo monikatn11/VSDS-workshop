@@ -21,10 +21,13 @@ The task 1 includes completion of the following instructions
   <br>
   <OL>
     <li>
-      Installation of Oracle VirtualBox.</li>
-      <img src="photo1.png"> 
+      Open ubuntu in VirtualBox.
+    </li>
+   <img src="task1.png">
+      
+   <br>
       <li>Home screen of Ubuntu.</li>
-      <img src="photo2.png">
+      <img src="task1(2).png">
     <br>
       <li>Open the terminal.</li>
       <img src="photo3.png"> <br>
