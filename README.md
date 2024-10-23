@@ -27,7 +27,7 @@ The task 1 includes completion of the following instructions
       
    <br>
       <li>Home screen of Ubuntu.</li>
-      <img src="task1(2).png">
+      <img src="task1 (2).png">
     <br>
       <li>Open the terminal.</li>
       <img src="photo3.png"> <br>
