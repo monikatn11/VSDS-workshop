@@ -59,12 +59,11 @@ The task 1 includes completion of the following instructions
 ### Testing the SPIKE Simulator  
 The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and ```riscv compiler```, and both of the compiler must display the same output on the terminal. So to compile the code using **gcc compiler**, use the following command:  
 ```
-gcc sum1ton.c  
-./a.out
+<img ="task2.png">
 ```
 And to compile the code using **riscv compiler**, use the following command:  
 ```
-spike pk sum1ton.o
+<img = "taskk2.png">
 ```  
 </details>
 
