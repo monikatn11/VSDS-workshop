@@ -1,9 +1,12 @@
  # VSDSquadronMini Research Internship - 20th October Cohert
-<br>
+<p>
 The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V
-<br>
-Instructor: Kunal Ghosh
-<p> </p>
+</p>
+
+<li>Instructor: Kunal Ghosh</li>
+<li> Student Name: Monika T N</li>
+<li> College Name:BMS COLLEGE OF ENGINEERIng</li></li>
+
 <h2> TASK 1 </h2>
 <h3> Installation of RISC-V toolchain using VDI. Uploading the snapshot of complied Ccode and RISC-V Objdmp on GitHub</h3>
 The task 1 includes completion of the following instructions
