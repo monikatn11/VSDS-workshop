@@ -50,12 +50,13 @@ The task 1 includes completion of the following instructions
 > * A RISC-V ISA is a simulator, enabling the testing and analysis of RISC-V programs without the need for actual hardware.  
 > * Spike is a free, open-source C++ simulator for the RISC-V ISA that models a RISC-V core and cache system. It can be used to run programs and a Linux kernel, and can be a starting point for running software on a RISC-V target.  
   
-### What is pk (Proxy Kernel)?  
+   <h3>What is pk (Proxy Kernel)?  </h3>
 > * The RISC-V Proxy Kernel, pk , is a lightweight application execution environment that can host statically-linked RISC-V ELF binaries.  
 > * A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.  
  
 
-### Testing the SPIKE Simulator  
+
+ <h3>Testing the SPIKE Simulator</h3>  
 The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and ```riscv compiler```, and both of the compiler must display the same output on the terminal. So to compile the code using **gcc compiler**, use the following command:  
 ```
 gcc sum1ton.c  
