@@ -61,7 +61,8 @@ The task 1 includes completion of the following instructions
 
 ### Testing the SPIKE Simulator  
 The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and ```riscv compiler```, and both of the compiler must display the same output on the terminal. 
-<li>To compile the code using **gcc compiler**, use the following command:  </li><br>
+### Write a simple C program for any simple application and compile with RISC-V GCC/SPIKE.
+<li>Write the C program to find largest number in 3 numbers in newfile and run the code in terminal.</li>
 <img src ="task2 (3).png"><br>
 
 <li>And to compile the code using **riscv compiler**, use the following command: </li><br>
