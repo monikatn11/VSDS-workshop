@@ -98,57 +98,54 @@ RISC-V organizes its machine language instructions into six distinct formats, ea
 
 <h2>R-Type Instructions:</h2>
 
-<p>Used primarily for arithmetic and logical operations.
-Structure: Each instruction is 32 bits long and includes:
-Opcode (7 bits): Indicates the type of operation.
-rd (5 bits): The destination register where the result is stored.
-func3 (3 bits): Specifies the operation type (e.g., add, subtract).
-rs1 (5 bits): The first source register.
-rs2 (5 bits): The second source register.
-func7 (7 bits): Provides additional details about the operation.</p>
+<p>Used primarily for arithmetic and logical operations.Each instruction is 32 bits long and includes.<br>
+ Structure:
+<li>Opcode (7 bits): Indicates the type of operation.</li>
+<li>rd (5 bits): The destination register where the result is stored.</li>
+<li>func3 (3 bits): Specifies the operation type (e.g., add, subtract).</li>
+<li>rs1 (5 bits): The first source register.</li>
+<li>rs2 (5 bits): The second source register.</li>
+<li>func7 (7 bits): Provides additional details about the operation.</li></p>
 
 <h2>I-Type Instructions:</h2>
-
-What It Is: Involves operations that use registers and immediate values (constants).
+Involves operations that use registers and immediate values (constants).<br>
 Structure:
-Opcode (7 bits): Identifies the instruction type.
-rd (5 bits): The destination register.
-func3 (3 bits): Operation type.
-rs1 (5 bits): The source register.
-imm (12 bits): A signed immediate value (replaces rs2 and func7 from R-Type).
+<li>Opcode (7 bits): Identifies the instruction type.</li>
+<li>rd (5 bits): The destination register.</li>
+<li>func3 (3 bits): Operation type.</li>
+<li>rs1 (5 bits): The source register.</li>
+<li>imm (12 bits): A signed immediate value (replaces rs2 and func7 from R-Type).</li>
 
 <h2>S-Type Instructions:</h2>
-
-What It Is: Used to store data from registers to memory.
+Used to store data from registers to memory.<br>
 Structure:
-Opcode (7 bits): Indicates the operation.
-imm (12 bits): Split into two parts for memory address calculation.
-rs1 (5 bits): The source register containing the value to be stored.
-func3 (3 bits): Defines the type of store operation (byte, half-word, etc.).
+<li>Opcode (7 bits): Indicates the operation.</li>
+<li>imm (12 bits): Split into two parts for memory address calculation.</li>
+<li>rs1 (5 bits): The source register containing the value to be stored.</li>
+<li>func3 (3 bits): Defines the type of store operation (byte, half-word, etc.).</li>
 
 <h2>B-Type Instructions:</h2>
-
-What It Is: Used for branching and control flow based on conditions.
+Used for branching and control flow based on conditions.<br>
 Structure:
-Opcode (7 bits): Defines the instruction type.
-imm (12 bits): Encodes the branch offset.
-rs1 (5 bits) and rs2 (5 bits): Source registers used in the branching condition.
-func3 (3 bits): Specifies the branch condition.
+<li>Opcode (7 bits): Defines the instruction type.</li>
+<li>imm (12 bits): Encodes the branch offset.</li>
+<li>rs1 (5 bits) and rs2 (5 bits): Source registers used in the branching condition.</li>
+<li>func3 (3 bits): Specifies the branch condition.</li>
 
 <h2>U-Type Instructions:</h2>
 
-What It Is: Designed to load immediate values into registers.
+Designed to load immediate values into registers.<br>
 Structure:
-Opcode (7 bits): Specifies the instruction.
+<li>Opcode (7 bits): Specifies the instruction.</li>
 Consists mainly of two instructions: LUI (Load Upper Immediate) and AUIPC (Add Upper Immediate to PC).
 Example: lui x15, 0x13579 would load the value into the upper half of register x15.
 
 <h2>J-Type Instructions:</h2>
 
- Used for jump operations, allowing the program to change its execution flow.
+It is used for jump operations, allowing the program to change its execution flow.<br>
 Structure:
-Opcode (7 bits): Indicates a jump instruction.
-imm (20 bits): The immediate value determining where to jump.
+<li>Opcode (7 bits): Indicates a jump instruction.</li>
+<li>imm (20 bits): The immediate value determining where to jump.</li>
 Primarily consists of the JAL (Jump and Link) instruction, often used in loops and function calls.
 
 
