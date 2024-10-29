@@ -133,7 +133,6 @@ Structure:
 <li>func3 (3 bits): Specifies the branch condition.</li>
 
 <h2>U-Type Instructions:</h2>
-
 Designed to load immediate values into registers.<br>
 Structure:
 <li>Opcode (7 bits): Specifies the instruction.</li>
@@ -141,7 +140,6 @@ Consists mainly of two instructions: LUI (Load Upper Immediate) and AUIPC (Add U
 Example: lui x15, 0x13579 would load the value into the upper half of register x15.
 
 <h2>J-Type Instructions:</h2>
-
 It is used for jump operations, allowing the program to change its execution flow.<br>
 Structure:
 <li>Opcode (7 bits): Indicates a jump instruction.</li>
