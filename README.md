@@ -64,8 +64,8 @@ The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and 
 
 ### Debug the task 1 code using SPIKE
 <li> To use SPIKE and debug sum 1 to n c program </li><br>
-<img src="task2.png">
 <img src="task2 (2).png">
+<img src="task2.png">
 
 
 ### Write a simple C program for any simple application and compile with RISC-V GCC/SPIKE.
