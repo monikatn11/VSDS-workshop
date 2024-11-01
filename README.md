@@ -147,18 +147,6 @@ Structure:
 <li>imm (20 bits): The immediate value determining where to jump.</li>
 Primarily consists of the JAL (Jump and Link) instruction, often used in loops and function calls.<br>
 <img src="Task3.png">
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+<h3>15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h3><br>
+<img src="Task3 (1).jpeg">
 </details>
