@@ -86,7 +86,8 @@ The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and 
 <details>
 <summary>
  <h2>TASK-3</h2><br>
-</b><h2> RISC-V Instruction types & 32-Bit Instruction code
+</b><h2> 1.RISC-V Instruction types & 32-Bit Instruction code.<br>
+ 2.Identifying 15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h2>
 </summary>
 
 <h3>What is RISC-V?</h3>
@@ -144,7 +145,8 @@ It is used for jump operations, allowing the program to change its execution flo
 Structure:
 <li>Opcode (7 bits): Indicates a jump instruction.</li>
 <li>imm (20 bits): The immediate value determining where to jump.</li>
-Primarily consists of the JAL (Jump and Link) instruction, often used in loops and function calls.
+Primarily consists of the JAL (Jump and Link) instruction, often used in loops and function calls.<br>
+<img src="Task3.png">
 
 
 
