@@ -163,27 +163,28 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 
 ### Steps to perform functional simulation of RISCV  
 1. Create a new directory  ```mkdir <task>```
-2. Create two files by using ```touch``` command as ```task_rv32i.v``` and ```task_rv32i_tb.v```  <br>
-  <img src="Task/task4.png">
+2. Create two files by using ```touch``` command as ```task_rv32i.v``` and ```task_rv32i_tb.v``` <br>
+  <img src="Task/task4.png"><br>
 
 3. Copy the code from the reference github repo and paste it in your verilog and testbench files.<br>
-  <img src="Task/task4(1).png">
-    <img src="Task/task4(2).png">
+  <img src="Task4/task4(1).png"><br>
+    <img src="Task4/task4 (2).png">
 
 
   
   
-5. To run and simulate the verilog code, enter the following command:  
+4. To run and simulate the verilog code, enter the following command:  
 	```
 	$ iverilog -o task_rv32i task_rv32i.v task_rv32i_tb.v
 	$ ./task_rv32i
 	```
-6. To see the simulation waveform in GTKWave, enter the following command:
+5. To see the simulation waveform in GTKWave, enter the following command:
 	```
 	$ gtkwave task_rv32i.vcd
 	```
 
-7. The GTKWave will be opened and following window will be appeared  
+6. The GTKWave will be opened and following window will be appeared.<br>
+     <img src="Task4/task4 (3).png">
 
 
   
