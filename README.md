@@ -186,6 +186,11 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 6. The GTKWave will be opened and following window will be appeared.<br>
      <img src="Task4/task4 (3).png">
 
+7.Output Waveform of various instructions that we have covered in TASK-2.<br>
+ <img src="Task4/task4 (4).png"><br>
+  <img src="Task4/task4 (5).png"><br>
+ 
+
 
   
  
