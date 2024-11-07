@@ -86,8 +86,9 @@ The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and 
 <details>
 <summary>
  <h2>TASK-3</h2><br>
-</b><h2> 1.RISC-V Instruction types & 32-Bit Instruction code.<br>
- 2.Identifying 15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h2>
+ 
+</b><h3> 1.RISC-V Instruction types & 32-Bit Instruction code.<br>
+ 2.Identifying 15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h3>
 </summary>
 
 <h3>What is RISC-V?</h3>
@@ -150,3 +151,16 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 <h3>15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h3><br>
 <img src="Task3 (1).jpeg">
 </details>
+
+
+<details>
+ <summary>
+  <h2> </b>Task-4</h2>
+  <h3>Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment and Upload waveform</h3>
+  </summary>
+
+
+  
+ 
+</details>
+
