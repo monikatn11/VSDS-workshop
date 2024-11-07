@@ -1,15 +1,15 @@
  # VSDSquadronMini Research Internship - 20th October Cohert
-<p>
-The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V
-</p>
+ 
+<h2>The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V</h2><br>
 
-<li>Instructor: Kunal Ghosh</li>
-<li> Student Name: Monika T N</li>
-<li> College Name:BMS COLLEGE OF ENGINEERING,BENGALURU.</li>
+### Instructor: Kunal Ghosh
+### Student Name: Monika T N</li>
+### College Name:BMS COLLEGE OF ENGINEERING,BENGALURU.
+
 <details>
  <summary>
  <h2> TASK-1 </h2> 
-<h2>Installation of RISC-V toolchain using VDI. Uploading the snapshot of complied code and RISC-V Objdmp on GitHub.</h2>
+<h3>Installation of RISC-V toolchain using VDI. Uploading the snapshot of complied code and RISC-V Objdmp on GitHub.</h3>
  </summary>
 The task 1 includes completion of the following instructions
 <br>
@@ -45,11 +45,12 @@ The task 1 includes completion of the following instructions
 </h4>
 </details>
 
+-------------------------------------------------
 
 <details>
 <summary>
  <h2>TASK-2</h2>
-</b> <h2>Performing SPIKE Simulation and Debugging a simple C code with Interactive Debugging Mode using Spike</h2>
+</b> <h3>Performing SPIKE Simulation and Debugging a simple C code with Interactive Debugging Mode using Spike</h3>
 </summary> 
   
 ### What is SPIKE in RISCV?
@@ -83,6 +84,7 @@ The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and 
  
 </details>
 
+-----------------------------------------------
 <details>
 <summary>
  <h2>TASK-3</h2><br>
@@ -152,23 +154,23 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 <img src="Task3 (1).jpeg">
 </details>
 
-
+------------------------------------------------------------------------
 <details>
  <summary>
   <h2> </b>Task-4</h2>
   <h3>Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment and Upload waveform</h3>
   </summary>
-  ***NOTE:** Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : [iiitb_rv32i](https://github.com/vinayrayapati/rv32i/)* 
+  ***NOTE:** Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : [iiitb_rv32i](https://github.com/vinayrayapati/rv32i/)***
 
 
 ### Steps to perform functional simulation of RISCV  
 1. Create a new directory  ```mkdir <task>```
-2. Create two files by using ```touch``` command as ```task_rv32i.v``` and ```task_rv32i_tb.v``` <br>
-  <img src="Task/task4.png"><br>
+2. Create two files by using ```touch``` command as ```task_rv32i.v``` and ```task_rv32i_tb.v```<br>
+  <img src="Task4/task4.png"><br>
 
 3. Copy the code from the reference github repo and paste it in your verilog and testbench files.<br>
   <img src="Task4/task4(1).png"><br>
-    <img src="Task4/task4 (2).png">
+    <img src="Task4/task4 (2).png"><br>
 
 
   
@@ -187,8 +189,10 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
      <img src="Task4/task4 (3).png">
 
 7.Output Waveform of various instructions that we have covered in TASK-2.<br>
- <img src="Task4/task4 (4).png"><br>
+ <img src="Task4/task4(4).png"><br>
   <img src="Task4/task4 (5).png"><br>
+
+  </details>
  
 
 
