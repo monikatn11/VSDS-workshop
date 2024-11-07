@@ -158,6 +158,27 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
   <h2> </b>Task-4</h2>
   <h3>Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment and Upload waveform</h3>
   </summary>
+  ***NOTE:** Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : [iiitb_rv32i](https://github.com/vinayrayapati/rv32i/)* 
+
+
+### Steps to perform functional simulation of RISCV  
+1. Create a new directory  ```mkdir <task>```
+2. Create two files by using ```touch``` command as ```task_rv32i.v``` and ```task_rv32i_tb.v```  
+3. Copy the code from the reference github repo and paste it in your verilog and testbench files.<br>
+
+  
+  
+5. To run and simulate the verilog code, enter the following command:  
+	```
+	$ iverilog -o task_rv32i task_rv32i.v task_rv32i_tb.v
+	$ ./task_rv32i
+	```
+6. To see the simulation waveform in GTKWave, enter the following command:
+	```
+	$ gtkwave task_rv32i.vcd
+	```
+
+7. The GTKWave will be opened and following window will be appeared  
 
 
   
