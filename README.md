@@ -194,5 +194,5 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 
   </details>
  -------------------------
- <details></details>
+ 
 
