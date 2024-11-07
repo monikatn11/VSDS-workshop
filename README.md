@@ -193,5 +193,6 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
   <img src="Task4/task4 (5).png"><br>
 
   </details>
- ----------------------------------------
+ -------------------------
+ <details></details>
 
