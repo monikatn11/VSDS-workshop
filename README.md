@@ -90,7 +90,8 @@ The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and 
  <h2>TASK-3</h2><br>
  
 </b><h3> 1.RISC-V Instruction types & 32-Bit Instruction code.<br>
- 2.Identifying 15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h3>
+ 2.Identifying 15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.<br>
+ 3.Exact 32-bit instruction code in the instruction type format for 15 unique instructions.</h3>
 </summary>
 
 <h3>What is RISC-V?</h3>
@@ -100,7 +101,7 @@ The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and 
 <h2>Instruction Formats in RISC-V</h2>
 RISC-V organizes its machine language instructions into six distinct formats, each optimized for different types of operations. Here’s a breakdown of each format:
 
-<h2>R-Type Instructions:</h2>
+<h3>R-Type Instructions:</h3>
 
 <p>Used primarily for arithmetic and logical operations.Each instruction is 32 bits long and includes.<br>
  Structure:
@@ -111,7 +112,7 @@ RISC-V organizes its machine language instructions into six distinct formats, ea
 <li>rs2 (5 bits): The second source register.</li>
 <li>func7 (7 bits): Provides additional details about the operation.</li></p>
 
-<h2>I-Type Instructions:</h2>
+<h3>I-Type Instructions:</h3>
 Involves operations that use registers and immediate values (constants).<br>
 Structure:
 <li>Opcode (7 bits): Identifies the instruction type.</li>
@@ -120,7 +121,7 @@ Structure:
 <li>rs1 (5 bits): The source register.</li>
 <li>imm (12 bits): A signed immediate value (replaces rs2 and func7 from R-Type).</li>
 
-<h2>S-Type Instructions:</h2>
+<h3>S-Type Instructions:</h3>
 Used to store data from registers to memory.<br>
 Structure:
 <li>Opcode (7 bits): Indicates the operation.</li>
@@ -128,7 +129,7 @@ Structure:
 <li>rs1 (5 bits): The source register containing the value to be stored.</li>
 <li>func3 (3 bits): Defines the type of store operation (byte, half-word, etc.).</li>
 
-<h2>B-Type Instructions:</h2>
+<h3>B-Type Instructions:</h3>
 Used for branching and control flow based on conditions.<br>
 Structure:
 <li>Opcode (7 bits): Defines the instruction type.</li>
@@ -136,22 +137,167 @@ Structure:
 <li>rs1 (5 bits) and rs2 (5 bits): Source registers used in the branching condition.</li>
 <li>func3 (3 bits): Specifies the branch condition.</li>
 
-<h2>U-Type Instructions:</h2>
+<h3>U-Type Instructions:</h3>
 Designed to load immediate values into registers.<br>
 Structure:
 <li>Opcode (7 bits): Specifies the instruction.</li>
 Consists mainly of two instructions: LUI (Load Upper Immediate) and AUIPC (Add Upper Immediate to PC).
 Example: lui x15, 0x13579 would load the value into the upper half of register x15.
 
-<h2>J-Type Instructions:</h2>
+<h3>J-Type Instructions:</h3>
 It is used for jump operations, allowing the program to change its execution flow.<br>
 Structure:
 <li>Opcode (7 bits): Indicates a jump instruction.</li>
 <li>imm (20 bits): The immediate value determining where to jump.</li>
 Primarily consists of the JAL (Jump and Link) instruction, often used in loops and function calls.<br>
 <img src="Task3.png">
-<h3>15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h3><br>
+<h2>15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h2><br>
 <img src="Task3 (1).jpeg">
+<h2>Exact 32-bit instruction code in the instruction type format for 15 unique instructions.</h2>
+
+
+### 1. `lw x5, 0(x0)`  
+   - **Instruction Type:** I-Type  
+   - **Operation:** Load word from memory.  
+   - **Details:**  
+     - This instruction loads a 32-bit word from memory at the address specified by `x0 + 0` (which is typically `0` because `x0` in RISC-V is hardwired to zero).
+     - The value from this memory location is loaded into the register `x5`.  
+   - **Role in Program:**  
+     - This is the first memory load operation and sets the value of `x5`.
+
+---
+
+### 2. `lw x6, 4(x0)`  
+   - **Instruction Type:** I-Type  
+   - **Operation:** Load word from memory.  
+   - **Details:**  
+     - Similar to the first instruction, but here it loads a word from an address offset by 4 bytes from the base address in `x0` (0 in this case).  
+     - This value is loaded into register `x6`.
+   - **Role in Program:**  
+     - This instruction sets the value of `x6` from memory.
+
+---
+
+### 3. `lw x7, 8(x0)`  
+   - **Instruction Type:** I-Type  
+   - **Operation:** Load word from memory.  
+   - **Details:**  
+     - This instruction loads the word from the memory address `x0 + 8` and stores it into register `x7`.  
+   - **Role in Program:**  
+     - This instruction sets the value of `x7`.
+
+---
+
+### 4. `blt x5, x6, else1`  
+   - **Instruction Type:** B-Type  
+   - **Operation:** Branch if less than.  
+   - **Details:**  
+     - This is a conditional branch instruction.
+     - It compares `x5` and `x6`. If the value in `x5` is less than the value in `x6`, the program branches to the label `else1`. If not, it continues with the next instruction.
+   - **Role in Program:**  
+     - This instruction controls the program flow by branching based on a comparison. It introduces the decision-making part of the program.
+
+---
+
+### 5. `mv x8, x5` (encoded as `addi x8, x5, 0`)  
+   - **Instruction Type:** I-Type  
+   - **Operation:** Move (implemented as `addi` with immediate 0).  
+   - **Details:**  
+     - The `mv` (move) instruction copies the value from `x5` to `x8`. It’s encoded as `addi x8, x5, 0`, which adds 0 to `x5` and stores the result in `x8`.  
+   - **Role in Program:**  
+     - This instruction is used to copy the value of `x5` into `x8`. If the program didn’t branch at `blt`, this would be the next step.
+
+---
+
+### 6. `j next1`  
+   - **Instruction Type:** J-Type  
+   - **Operation:** Jump to label.  
+   - **Details:**  
+     - This unconditional jump moves program execution to the label `next1`, skipping over any instructions between the current one and `next1`.
+   - **Role in Program:**  
+     - It skips some instructions (likely the `else1` block) and moves execution forward.
+
+---
+
+### 7. `mv x8, x6` (encoded as `addi x8, x6, 0`)  
+   - **Instruction Type:** I-Type  
+   - **Operation:** Move (implemented as `addi` with immediate 0).  
+   - **Details:**  
+     - Copies the value from `x6` to `x8`, similar to the earlier `mv` instruction, but now with the value of `x6`.  
+   - **Role in Program:**  
+     - This happens if the program took the `else1` branch, updating `x8` with the value from `x6`.
+
+---
+
+### 8. `blt x8, x7, else2`  
+   - **Instruction Type:** B-Type  
+   - **Operation:** Branch if less than.  
+   - **Details:**  
+     - This compares the value in `x8` with `x7`. If `x8` is less than `x7`, the program branches to `else2`. Otherwise, it continues with the next instruction.
+   - **Role in Program:**  
+     - Controls the flow based on another comparison. This adds another decision point in the program.
+
+---
+
+### 9. `mv x8, x7` (encoded as `addi x8, x7, 0`)  
+   - **Instruction Type:** I-Type  
+   - **Operation:** Move (implemented as `addi` with immediate 0).  
+   - **Details:**  
+     - Copies the value from `x7` to `x8`.  
+   - **Role in Program:**  
+     - If the program didn’t branch to `else2`, it moves the value of `x7` to `x8`.
+
+---
+
+### 10. `sw x8, 0(x10)`  
+   - **Instruction Type:** S-Type  
+   - **Operation:** Store word to memory.  
+   - **Details:**  
+     - This instruction stores the word from register `x8` into memory at the address `x10 + 0`.
+   - **Role in Program:**  
+     - It writes the result of the computation back to memory.
+
+---
+
+### 11. `ret` (encoded as `jalr x0, 0(x1)`)  
+   - **Instruction Type:** I-Type (for indirect jumps).  
+   - **Operation:** Return from subroutine.  
+   - **Details:**  
+     - This is a return instruction. It jumps back to the address stored in `x1` (typically the return address of a subroutine).
+   - **Role in Program:**  
+     - It ends the current function or subroutine and returns control to the calling program.
+
+---
+
+### 12. `nop` (encoded as `addi x0, x0, 0`)  
+   - **Instruction Type:** I-Type  
+   - **Operation:** No operation.  
+   - **Details:**  
+     - A `nop` (no operation) is a placeholder instruction that does nothing. It is encoded as `addi x0, x0, 0` which adds 0 to register `x0` (which remains 0).
+   - **Role in Program:**  
+     - It introduces a delay or alignment in instruction execution without affecting program state.
+
+---
+
+### 13. `lui x1, 0x1`  
+   - **Instruction Type:** U-Type  
+   - **Operation:** Load upper immediate.  
+   - **Details:**  
+     - This instruction loads the immediate value `0x1` into the upper 20 bits of register `x1`. The lower 12 bits are set to 0.  
+   - **Role in Program:**  
+     - It sets up `x1` with a high immediate value for future operations.
+
+---
+
+### 14. `addi x10, x0, 4`  
+   - **Instruction Type:** I-Type  
+   - **Operation:** Add immediate.  
+   - **Details:**  
+     - Adds the immediate value `4` to `x0` (which is 0) and stores the result (`4`) in `x10`.  
+   - **Role in Program:**  
+     - It sets `x10` to 4, possibly for future memory address calculations or comparisons.
+
+---
 </details>
 
 ------------------------------------------------------------------------
