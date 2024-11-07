@@ -163,9 +163,13 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 
 ### Steps to perform functional simulation of RISCV  
 1. Create a new directory  ```mkdir <task>```
-2. Create two files by using ```touch``` command as ```task_rv32i.v``` and ```task_rv32i_tb.v```  
+2. Create two files by using ```touch``` command as ```task_rv32i.v``` and ```task_rv32i_tb.v```  <br>
+  <img src="Task/task4.png">
+
 3. Copy the code from the reference github repo and paste it in your verilog and testbench files.<br>
-  <img src="task4.png">
+  <img src="Task/task4(1).png">
+    <img src="Task/task4(2).png">
+
 
   
   
