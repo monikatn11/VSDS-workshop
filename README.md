@@ -381,7 +381,85 @@ Cathode (short leg) → Ground (GND on VSDSquadron mini)<br>
 <img src="Task5/task5 .png">
 
 <h3>Truth table :</h3><br>
-<img src="Task5/task5 (1).png">
+<img src="Task5/task5(1).png">
+
+<h3> C Program Code for the Automatic Light System:</h3>
+
+<pre><code>
+#include <stdint.h>
+#include <stdbool.h>
+
+#define IR_SENSOR_PIN 1     // GPIO pin for the IR sensor input
+#define LED_PIN 2           // GPIO pin for the LED output
+#define DELAY_TIME 10000    // Delay time in milliseconds (10 seconds)
+
+// Function to set GPIO pin as input or output
+void gpio_setup(int pin, bool is_output) {
+    if (is_output) {
+        GPIO_DIRECTION(pin, OUTPUT);  // Set pin as output
+    } else {
+        GPIO_DIRECTION(pin, INPUT);   // Set pin as input
+    }
+}
+
+// Function to write to a GPIO pin (to turn LED on or off)
+void gpio_write(int pin, bool value) {
+    GPIO_WRITE(pin, value);           // Write 1 to turn on, 0 to turn off
+}
+
+// Function to read from a GPIO pin (to get input from the IR sensor)
+bool gpio_read(int pin) {
+    return GPIO_READ(pin);            // Read pin value (1 = motion detected, 0 = no motion)
+}
+
+// Function to create a delay in milliseconds
+void delay_ms(int ms) {
+    for (int i = 0; i < ms * 1000; i++);  // Basic delay loop
+}
+
+// Main function
+int main(void) {
+    // Initialize GPIO pins
+    gpio_setup(IR_SENSOR_PIN, false);  // Set IR sensor pin as input
+    gpio_setup(LED_PIN, true);         // Set LED pin as output
+
+    while (1) {
+        // Check if motion is detected by reading the IR sensor
+        if (gpio_read(IR_SENSOR_PIN)) {
+            // If motion is detected, turn on the LED
+            gpio_write(LED_PIN, 1);    // Turn on LED
+        } else {
+            // If no motion is detected, turn off the LED after a delay
+            delay_ms(DELAY_TIME);      // Wait for a delay
+            gpio_write(LED_PIN, 0);    // Turn off LED
+        }
+    }
+
+    return 0;
+}
+</code>
+</pre>
+<h3>Applications:</h3>
+<b>1.Smart Home Automation</b>:
+<li>Application:</li> In a smart home, this system can be used to control room lighting, hallway lights, or outdoor lighting. Lights automatically turn on when a person enters the room and turn off after a specified delay when no motion is detected, helping reduce energy consumption.<br>
+<li>Benefit:</li> This reduces electricity usage and ensures lights are not left on unnecessarily, improving overall energy efficiency.<br>
+<b>2. Office and Commercial Spaces:</b>
+<li>Application:</li> In office environments, meeting rooms, or hallways, the system can automatically turn on lights when someone enters and turn them off after they leave. This reduces the need for manual switching and ensures lights are only on when needed.<br>
+<li>Benefit:</li> It can save energy costs and create a more user-friendly environment, where employees don’t need to manually adjust lights every time they enter or leave a room.<br>
+<b>3. Security Lighting:</b>
+<li>Application:</li> This system can be installed as part of an outdoor security lighting setup. When motion is detected (e.g., from an intruder or an animal), the lights will automatically turn on, illuminating the area and acting as a deterrent for unauthorized entry.<br>
+<li>Benefit:</li> Increases security by activating lights in response to motion, alerting the homeowner or security personnel to any activity. It also reduces unnecessary lighting when no movement is detected.<br>
+<b>4. Parking Lots and Garages:</b>
+<li>Application:</li> For parking lots or garages, this system can turn on lights when a car or pedestrian enters the space and turn off after they leave. The system would reduce power consumption during the times the area is unoccupied.<br>
+<li>Benefit:</li> Saves energy in large spaces and ensures lighting is only activated when necessary, improving safety in the area while being cost-effective.<br>
+<b>5. Stairways and Hallways:</b>
+<li>Application:</li> In stairways, corridors, or other areas with infrequent movement, this system ensures lights are automatically activated when someone is present and turns them off when not in use.<br>
+<li>Benefit:</li> Enhances safety by providing lighting when needed and reduces energy waste by switching off when no movement is detected.
+
+
+
+
+
 
 
   </details>
