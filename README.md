@@ -68,19 +68,19 @@ The target is to run the ```sum1ton.c``` code using both ```gcc compiler``` and 
 
 ### Debug the task 1 code using SPIKE
 <li> To use SPIKE and debug sum 1 to n c program </li><br>
-<img src="task2 (2).png">
-<img src="task2.png">
+<img src="Task2/task2 (2).png">
+<img src="Task2/task2.png">
 
 
 ### Write a simple C program for any simple application and compile with RISC-V GCC/SPIKE.
 <li>Write the C program to find largest number in 3 numbers in newfile and run the code in terminal.</li>
-<img src ="task2 (3).png"><br>
+<img src ="Task2/task2 (3).png"><br>
 
 <li>And to compile the code using **riscv compiler**, use the following command: </li><br>
-<img src="task2 (3.1).png"><br>
+<img src="Task2/task2 (3.1).png"><br>
 <li>Search the main.</li>
-       <img src="task2 (4).png">
-        <img src="task2 (5).png">
+       <img src="Task2/task2 (4).png">
+        <img src="Task2/task2 (5).png">
  
 </details>
 
@@ -150,9 +150,9 @@ Structure:
 <li>Opcode (7 bits): Indicates a jump instruction.</li>
 <li>imm (20 bits): The immediate value determining where to jump.</li>
 Primarily consists of the JAL (Jump and Link) instruction, often used in loops and function calls.<br>
-<img src="Task3.png">
+<img src="Task3/Task3.png">
 <h2>15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h2><br>
-<img src="Task3 (1).jpeg">
+<img src="Task3/Task3 (1).jpeg">
 <h2>Exact 32-bit instruction code in the instruction type format for 15 unique instructions.</h2>
 
 
