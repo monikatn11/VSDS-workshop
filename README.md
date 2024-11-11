@@ -1,4 +1,4 @@
-s # VSDSquadronMini Research Internship - 20th October Cohert
+ # VSDSquadronMini Research Internship - 20th October Cohert
  
 <h2>The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V</h2><br>
 
@@ -28,19 +28,19 @@ The task 1 includes completion of the following instructions
     <li>
       Open ubuntu in VirtualBox.
     </li>
-   <img src="task1.png">
+   <img src="Task1/task1.png">
       
    <br>
       <li>Home screen of Ubuntu.</li>
-      <img src="task1 (3).png">
+      <img src="Task1/task1 (3).png">
     <br>
       <li>Write the C program for sum of one to n in newfile and run the code in terminal.</li>
-      <img src= "task1 (4).png" > <br>
+      <img src= "Task1/task1 (4).png" > <br>
       <li>Run command riscv64-unknown-elf-objdump -d sum1ton.o </li>
-      <img src="task1 (5).png"> <br>
+      <img src="Task1/task1 (5).png"> <br>
       <li>Search the main.</li>
-       <img src="taskk1.jpeg">
-        <img src="taskk1 (2).jpeg">
+       <img src="Task1/taskk1.jpeg">
+        <img src="Task1/taskk1 (2).jpeg">
 </OL>
 </h4>
 </details>
