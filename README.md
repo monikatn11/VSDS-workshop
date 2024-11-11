@@ -150,9 +150,9 @@ Structure:
 <li>Opcode (7 bits): Indicates a jump instruction.</li>
 <li>imm (20 bits): The immediate value determining where to jump.</li>
 Primarily consists of the JAL (Jump and Link) instruction, often used in loops and function calls.<br>
-<img src="Task3/Task3.png">
+<img src="Task3/task3.png">
 <h2>15 unique RISC-V instructions from Max_Min_Detector.o Assembly Code along with the 32-Bit Instruction Code.</h2><br>
-<img src="Task3/Task3 (1).jpeg">
+<img src="Task3/task3 (1).jpeg">
 <h2>Exact 32-bit instruction code in the instruction type format for 15 unique instructions.</h2>
 
 
