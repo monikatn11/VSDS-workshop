@@ -337,6 +337,48 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 7.Output Waveform of various instructions that we have covered in TASK-2.<br>
  <img src="Task4/task4(4).png"><br>
   <img src="Task4/task4 (5).png"><br>
+</details>
+
+------------------------------------------------------------------------
+  <details>
+	  <summary>
+		  <h2>TASK-5</h2><br>
+		  <h3>MINI PROJECT</h3>
+		  </summary>
+<h2>Implementing Automatic Light System Using VSDSquadron Mini</h2>
+
+
+<h3> Overview:</h3>
+<p>This project involves creating an automatic lighting system that responds to motion, utilizing the VSDSquadron Mini board, an IR sensor, and LEDs. The system is designed to turn lights on when movement is detected and off when no movement is present, enhancing energy efficiency and convenience.</p><br>
+
+<h3>Components:</h3>
+<li><b>VSDSquadron Mini Board:</b> This microcontroller serves as the core unit that processes sensor input and controls the output to the lights via its GPIO pins.</li>
+<li><b>IR Sensor:</b> It detects movement in the environment. When motion is detected, the sensor signals the VSDSquadron mini to activate the lights.</li>
+<li><b>LEDs:</b> Used to represent the lighting system. These LEDs are connected to the GPIO pins of the VSDSquadron mini and are turned on or off depending on the IR sensor’s input.</li>
+<li><b>Breadboard and Jumper Wires:</b> These components help in making connections between the sensor, microcontroller, and LEDs for easy prototyping.</li><br>
+<h3>Functionality:</h3>
+The IR sensor continuously monitors the environment for motion. When it detects movement, it sends a HIGH signal to the VSDSquadron mini via a GPIO pin.
+The VSDSquadron mini, in turn, triggers the LEDs to switch on, simulating the activation of lights.
+After a predetermined delay (e.g., 10-15 seconds), the LEDs turn off if no further motion is detected.
+The system resets, ready to respond to the next motion event.<br>
+
+<h3>Hardware connections:</h3>
+<h4>PIN daigram.</h4>
+<li><b>VSDSquadron Mini</b></li>
+<b>Power:</b>
+The board is powered via the USB connection to your computer or an external power source.
+<li><b>GPIO Pins:</b></li>
+GPIO Pin 1 → IR Sensor (OUT)<br>
+GPIO Pin 2 → LED (with resistor)<br>
+GPIO Pin 3 → Additional LED (optional for more lights)<br>
+<li><b>IR Sensor</b></li>
+VCC → 3.3V (from the VSDSquadron mini)<br>
+GND → Ground (GND on VSDSquadron mini)<br>
+OUT → GPIO Pin 1 (Input to VSDSquadron mini)<br>
+<li><b>LEDs</b></li>
+Anode (long leg) → GPIO Pin 2 (via 220Ω resistor)<br>
+Cathode (short leg) → Ground (GND on VSDSquadron mini)<br>
+
 
   </details>
  
