@@ -381,7 +381,7 @@ Cathode (short leg) → Ground (GND on VSDSquadron mini)<br>
 <img src="Task5/task5.png">
 
 <h3>Truth table :</h3>
-<img src="
+<img src="task5.png">
 
 
   </details>
