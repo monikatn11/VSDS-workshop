@@ -378,10 +378,10 @@ OUT → GPIO Pin 1 (Input to VSDSquadron mini)<br>
 <li><b>LEDs</b></li>
 Anode (long leg) → GPIO Pin 2 (via 220Ω resistor)<br>
 Cathode (short leg) → Ground (GND on VSDSquadron mini)<br>
-<img src="Task5/task5.png">
+<img src="Task5/task5 .png">
 
-<h3>Truth table :</h3>
-<img src="task5.png">
+<h3>Truth table :</h3><br>
+<img src="Task5/task5 (1).png">
 
 
   </details>
