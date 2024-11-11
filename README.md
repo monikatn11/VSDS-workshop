@@ -1,4 +1,4 @@
- # VSDSquadronMini Research Internship - 20th October Cohert
+s # VSDSquadronMini Research Internship - 20th October Cohert
  
 <h2>The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V</h2><br>
 
