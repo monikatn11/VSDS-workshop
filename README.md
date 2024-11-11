@@ -380,9 +380,6 @@ Anode (long leg) → GPIO Pin 2 (via 220Ω resistor)<br>
 Cathode (short leg) → Ground (GND on VSDSquadron mini)<br>
 <img src="Task5/task5 .png">
 
-<h3>Truth table :</h3><br>
-<img src="Task5/task5(1).png">
-
 <h3> C Program Code for the Automatic Light System:</h3>
 
 <pre><code>
