@@ -303,7 +303,7 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
 ------------------------------------------------------------------------
 <details>
  <summary>
-  <h2> </b>Task-4</h2>
+  <h2> </b>TASK-4</h2><br>
   <h3>Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment and Upload waveform</h3>
   </summary>
   ***NOTE:** Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : [iiitb_rv32i](https://github.com/vinayrayapati/rv32i/)***
@@ -343,10 +343,10 @@ Primarily consists of the JAL (Jump and Link) instruction, often used in loops a
   <details>
 	  <summary>
 		  <h2>TASK-5</h2><br>
-		  <h3>MINI PROJECT</h3>
-		  </summary>
-<h2>Implementing Automatic Light System Using VSDSquadron Mini</h2>
-
+		  
+		  
+<h3>Implementing Automatic Light System Using VSDSquadron Mini</h3><br>
+</summary>
 
 <h3> Overview:</h3>
 <p>This project involves creating an automatic lighting system that responds to motion, utilizing the VSDSquadron Mini board, an IR sensor, and LEDs. The system is designed to turn lights on when movement is detected and off when no movement is present, enhancing energy efficiency and convenience.</p><br>
@@ -454,14 +454,22 @@ Delay_Ms(100);}
 <b>5. Stairways and Hallways:</b>
 <li>Application:</li> In stairways, corridors, or other areas with infrequent movement, this system ensures lights are automatically activated when someone is present and turns them off when not in use.<br>
 <li>Benefit:</li> Enhances safety by providing lighting when needed and reduces energy waste by switching off when no movement is detected.
+</details>
 
+------------------------------------------------------------------------
+  <details>
+	<summary>
+		<h2>TASK-6</h2><br>
+		<h3>Demonstration of project.</h3>
+	</summary>
 
-
-
-
-
-
-  </details>
+   <h3>Mini project Image:</h3><br>
+   <img src="Task6/task6.jpeg"><br>
+   <h3>Project Video:</h3>
+   
+   
+   
+</details>
  
  
 
