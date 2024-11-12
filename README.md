@@ -363,7 +363,7 @@ After a predetermined delay (e.g., 10-15 seconds), the LEDs turn off if no furth
 The system resets, ready to respond to the next motion event.<br>
 
 <h3>Hardware connections:</h3>
-<h4>PIN daigram.</h4>
+<h4>PIN diagram.</h4>
 <li><b>VSDSquadron Mini</b></li>
 <b>Power:</b>
 The board is powered via the USB connection to your computer or an external power source.
@@ -378,7 +378,9 @@ OUT → GPIO Pin 1 (Input to VSDSquadron mini)<br>
 <li><b>LEDs</b></li>
 Anode (long leg) → GPIO Pin 2 (via 220Ω resistor)<br>
 Cathode (short leg) → Ground (GND on VSDSquadron mini)<br>
-<img src="Task5/task5(1) .png"><br>
+<img src="Task5/task5(1).jpeg"><br>
+
+<h4>Pin connections to VSDSquadron Mini:</h4><br>
 <img src="Task5/task5 .png"><br>
 
 <h3> C Program Code for the Automatic Light System:</h3>
