@@ -465,9 +465,9 @@ Delay_Ms(100);}
 
    <h3>Mini project Image:</h3><br>
    <img src="Task6/task6.jpeg"><br>
-   [Project Video :]
-   <source src="video.mp4" type="video/mp4">
-   
+   <h3>Project video:</h3> https://github.com/yourusername/yourrepo/blob/main/Task6/automatic_light_system.mp4
+
+  
    
    
 </details>
