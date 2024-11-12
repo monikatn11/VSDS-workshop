@@ -465,7 +465,7 @@ Delay_Ms(100);}
 
    <h3>Mini project Image:</h3><br>
    <img src="Task6/task6.jpeg"><br>
-   <h3>Project video:</h3> https://github.com/yourusername/yourrepo/blob/main/Task6/automatic_light_system.mp4
+   <h3>Project video:</h3> https://github.com/monikatn11/VSDS-workshop/tree/main/Task6/automatic_light_system.mp4
 
   
    
