@@ -383,57 +383,56 @@ Cathode (short leg) → Ground (GND on VSDSquadron mini)<br>
 <h3> C Program Code for the Automatic Light System:</h3>
 
 <pre><code>
-#include <stdint.h>
-#include <stdbool.h>
+//These include the necessary header files (ch32v00x.h and debug.h) for the CH32V microcontroller and debugging purposes.
+#include <ch32v00x.h>
+#include <debug.h>
+//pin configuration
+void GPIO_Config(void)
+{
+GPIO_InitTypeDef GPIO_InitStructure = {0}; //structure variable GPIO_InitStructure of type GPIO_InitTypeDef which is used for GPIO configuration.
 
-#define IR_SENSOR_PIN 1     // GPIO pin for the IR sensor input
-#define LED_PIN 2           // GPIO pin for the LED output
-#define DELAY_TIME 10000    // Delay time in milliseconds (10 seconds)
+RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // to Enable the clock for Port D
+//pin 4 OUT PIN FOR IR SENSOR
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 ; // Defines which Pin to configure
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; // Defines Output Type
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+//pin 6 IS LED PIN
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 ; //
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Defines Output Type
+GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; // Defines speed
 
-// Function to set GPIO pin as input or output
-void gpio_setup(int pin, bool is_output) {
-    if (is_output) {
-        GPIO_DIRECTION(pin, OUTPUT);  // Set pin as output
-    } else {
-        GPIO_DIRECTION(pin, INPUT);   // Set pin as input
-    }
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+}
+//main function
+
+int main(void)
+{
+uint8_t IR = 0;
+uint8_t set=1;
+uint8_t reset=0;
+uint8_t a=0;
+NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);// Configuring NVIC priority group
+SystemCoreClockUpdate();// Update System Core Clock
+Delay_Init();//Initialize Delay
+GPIO_Config();//Call GPIO configuration function
+
+while(1)
+{
+IR = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
+if (IR==1)//Read state of Pin 4 (IR sensor)
+{ // for blinking of led three times upon motion detection
+	for(a=0;a<3;a++){
+GPIO_WriteBit(GPIOD, GPIO_Pin_6, set);
+Delay_Ms(200);
+GPIO_WriteBit(GPIOD, GPIO_Pin_6,reset);
+Delay_Ms(100);}
+
 }
 
-// Function to write to a GPIO pin (to turn LED on or off)
-void gpio_write(int pin, bool value) {
-    GPIO_WRITE(pin, value);           // Write 1 to turn on, 0 to turn off
+}
 }
 
-// Function to read from a GPIO pin (to get input from the IR sensor)
-bool gpio_read(int pin) {
-    return GPIO_READ(pin);            // Read pin value (1 = motion detected, 0 = no motion)
-}
-
-// Function to create a delay in milliseconds
-void delay_ms(int ms) {
-    for (int i = 0; i < ms * 1000; i++);  // Basic delay loop
-}
-
-// Main function
-int main(void) {
-    // Initialize GPIO pins
-    gpio_setup(IR_SENSOR_PIN, false);  // Set IR sensor pin as input
-    gpio_setup(LED_PIN, true);         // Set LED pin as output
-
-    while (1) {
-        // Check if motion is detected by reading the IR sensor
-        if (gpio_read(IR_SENSOR_PIN)) {
-            // If motion is detected, turn on the LED
-            gpio_write(LED_PIN, 1);    // Turn on LED
-        } else {
-            // If no motion is detected, turn off the LED after a delay
-            delay_ms(DELAY_TIME);      // Wait for a delay
-            gpio_write(LED_PIN, 0);    // Turn off LED
-        }
-    }
-
-    return 0;
-}
 </code>
 </pre>
 <h3>Applications:</h3>
