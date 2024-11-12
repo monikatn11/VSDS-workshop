@@ -465,7 +465,8 @@ Delay_Ms(100);}
 
    <h3>Mini project Image:</h3><br>
    <img src="Task6/task6.jpeg"><br>
-   [Project Video]()
+   [Project Video :]
+   <source src="video.mp4" type="video/mp4">
    
    
    
