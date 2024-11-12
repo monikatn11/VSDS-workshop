@@ -465,9 +465,8 @@ Delay_Ms(100);}
 
    <h3>Mini project Image:</h3><br>
    <img src="Task6/task6.jpeg"><br>
-   <h3>Project video:</h3> https://github.com/monikatn11/VSDS-workshop/tree/main/Task6/automatic_light_system.mp4
-
-  
+   <h3>Project video:</h3> <br>
+   https://drive.google.com/file/d/1ZbfAjJymzxF_RfFCDB2_vD-2o3NQZLh3/view?usp=sharing
    
    
 </details>
