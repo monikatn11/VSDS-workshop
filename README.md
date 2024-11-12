@@ -466,10 +466,25 @@ Delay_Ms(100);}
    <h3>Mini project Image:</h3><br>
    <img src="Task6/task6.jpeg"><br>
    <h3>Project video:</h3> <br>
-   https://drive.google.com/file/d/1ZbfAjJymzxF_RfFCDB2_vD-2o3NQZLh3/view?usp=sharing
+   https://drive.google.com/file/d/1ZbfAjJymzxF_RfFCDB2_vD-2o3NQZLh3/view?usp=sharing <br>
+
+### Conclusion
+
+The automatic light system using the IR sensor and an LED successfully demonstrates the integration of basic peripherals on the CH32V00x microcontroller. In this project, the LED is controlled based on motion detection, making it an efficient solution for automatic lighting in various applications. The system is powered by an IR sensor connected to a GPIO pin, and the LED state is toggled based on the sensor's input. 
+
+Upon detecting motion, the system blinks the LED three times to indicate that motion has been detected. This functionality can be further extended to handle different lighting behaviors, such as turning the light on or off based on sustained motion. The use of a simple delay function ensures accurate timing for LED blinking, and the GPIO configuration enables seamless interaction with the hardware.
+
+This project serves as a foundation for more complex automation systems, and can be expanded by adding additional sensors or integrating communication modules for remote control. Overall, the system operates efficiently and demonstrates the practical use of microcontroller peripherals for real-world applications.
    
    
 </details>
+
+------------------------------------------------------------------------
+  <details>
+	<summary>
+		<h2>Acknowledgement</h2><br></summary>
+
+  I would like to extend my heartfelt thanks to Kunal Ghosh Sir for offering me this exceptional internship focused on RISCV Architecture with the VSDSquadron Mini. This opportunity ignited my passion for RISCV, providing me with the perfect introduction to this exciting field. Throughout the internship, I gained invaluable insights and hands-on experience. I am also grateful to VLSI System Design for creating such a remarkable research internship, which has greatly contributed to my learning and growth.
  
- 
+ </details>
 
