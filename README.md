@@ -491,7 +491,32 @@ void loop()
    <h3>Mini project Image:</h3><br>
    <img src="Task6/task6.jpeg"><br>
    <h3>Project video:</h3> <br>
-   https://drive.google.com/file/d/1ZbfAjJymzxF_RfFCDB2_vD-2o3NQZLh3/view?usp=sharing <br>
+   //https://drive.google.com/file/d/1ZbfAjJymzxF_RfFCDB2_vD-2o3NQZLh3/view?usp=sharing <br><br>
+   <p>This is a demonstration of an <b>Automatic Light System </b> using the <b>VSDSquadron Mini</b>, a RISC-V-based development board. This system turns the light ON whenever an object is detected using an <b>IR sensor</b>."
+
+## How It Works
+1. *Input:*  
+   - An *IR sensor module* detects objects based on infrared reflection.  
+   - When an object is within the sensor's range, it outputs a digital HIGH signal.  
+
+2. *Processing:*  
+   - The *VSDSquadron Mini* reads the IR sensor's digital output through a *GPIO pin*.  
+   - If an object is detected (HIGH signal), the system activates the light.
+
+3. *Output Control:*  
+   - Another *GPIO pin* is used to control a relay or LED.  
+   - When the IR sensor detects an object, the GPIO pin sends a signal to turn *ON* the light.  
+   - Once the object moves away, the light turns *OFF*.
+
+4. *Software:*  
+- The logic is implemented in *PlatformIO* using C/C++.  
+- The program continuously monitors the sensor and toggles the light based on detection.</p>
+
+
+
+
+
+   
 
 ### Conclusion
 
