@@ -491,7 +491,7 @@ void loop()
    <h3>Mini project Image:</h3><br>
    <img src="Task6/task6.jpeg"><br>
    <h3>Project video:</h3> <br>
-   https://drive.google.com/file/d/1ZbfAjJymzxF_RfFCDB2_vD-2o3NQZLh3/view?usp=sharing <br><br>
+   https://drive.google.com/file/d/1e7vK81sFtvMuhqY2zNTSJjcOIXRwjhSs/view?usp=sharings <br><br>
    <p>This is a demonstration of an <b>Automatic Light System </b> using the <b>VSDSquadron Mini</b>, a RISC-V-based development board. This system turns the light ON whenever an object is detected using an <b>IR sensor</b>."
 
 ## How It Works
